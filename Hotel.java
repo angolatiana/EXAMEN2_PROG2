@@ -10,6 +10,7 @@ public class Hotel extends Endroit {
     }
 
     public static Collection<Object> hotelProche() {
+        return List.of();
     }
 
     public void addChambre(Chambre chambre) {

@@ -28,7 +28,7 @@ public class CarteMada {
         }
         return hotel;
 
-    public void getAllPLaceInside(double minLat, double maxLat, double minLong , double  maxLong){
+    public List <Endroit> getAllPLaceInside(double minLat, double maxLat, double minLong , double  maxLong){
         List <Endroit> filtreEndroits = new ArrayList<>();
                 for (Endroit endroit : this.endroits) {
                     if (endroit.getLatitude() >=minLat
@@ -37,7 +37,6 @@ public class CarteMada {
                         filtreEndroits.add(endroit);
                     };
                 }
-           return filtreEndroits;
         }
 
     }
